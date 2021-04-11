@@ -1,0 +1,21 @@
+module Divide_by_50M_counter(clr,clk,clk_1Hz);
+   input clr,clk;
+   output clk_1Hz;
+   reg clk_1Hz =1'b0;
+   integer counter_50M =0;
+
+   always @(posedge clk, posedge clr)
+   begin
+      if (clr)
+         counter_50M <=0;
+      else if (counter_50M <25000000)
+      begin
+         counter_50M <= counter_50M + 1;
+      end
+      else if (counter_50M ==25000000)
+      begin
+         clk_1Hz <= !clk_1Hz;
+         counter_50M <=0;
+      end
+   end
+endmodule  

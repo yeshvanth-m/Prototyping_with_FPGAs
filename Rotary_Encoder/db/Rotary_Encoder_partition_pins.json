@@ -1,0 +1,65 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "switch_out",
+					"strict" : false
+				},
+				{
+					"name" : "direction_led",
+					"strict" : false
+				},
+				{
+					"name" : "count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "count[3]",
+					"strict" : false
+				},
+				{
+					"name" : "count[4]",
+					"strict" : false
+				},
+				{
+					"name" : "count[5]",
+					"strict" : false
+				},
+				{
+					"name" : "count[6]",
+					"strict" : false
+				},
+				{
+					"name" : "count[7]",
+					"strict" : false
+				},
+				{
+					"name" : "switch_in",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rot_en_A",
+					"strict" : false
+				},
+				{
+					"name" : "rot_en_B",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

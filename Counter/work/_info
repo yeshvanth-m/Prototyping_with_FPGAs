@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vCounter
+!s110 1617967682
+!i10b 1
+!s100 _Xb?EmkVYXBO38[h@UiBB0
+IaLP6]l9Q=fCae>YdjWHDg2
+Z0 VDg1SIo80bB@j0V0VzS_@n1
+Z1 dC:/Users/Electronics/Desktop/Counter
+w1617967679
+8C:/Users/Electronics/Desktop/Counter/Counter.v
+FC:/Users/Electronics/Desktop/Counter/Counter.v
+L0 1
+Z2 OP;L;10.4a;61
+r1
+!s85 0
+31
+!s108 1617967682.000000
+!s107 C:/Users/Electronics/Desktop/Counter/Counter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Electronics/Desktop/Counter/Counter.v|
+!s101 -O0
+!i113 1
+Z3 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@counter
+vFreq_Divider
+!s110 1617967355
+!i10b 1
+!s100 _zb_LC09k`Bb_QGcf^P7l1
+I1Y:NUSb<fCkh=`233C^OH1
+R0
+R1
+w1617967344
+8C:/Users/Electronics/Desktop/Counter/Freq_Divider.v
+FC:/Users/Electronics/Desktop/Counter/Freq_Divider.v
+L0 1
+R2
+r1
+!s85 0
+31
+!s108 1617967354.000000
+!s107 C:/Users/Electronics/Desktop/Counter/Freq_Divider.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Electronics/Desktop/Counter/Freq_Divider.v|
+!s101 -O0
+!i113 1
+R3
+n@freq_@divider

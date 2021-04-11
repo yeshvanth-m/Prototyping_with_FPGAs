@@ -1,0 +1,33 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vga_h_sync",
+					"strict" : false
+				},
+				{
+					"name" : "vga_v_sync",
+					"strict" : false
+				},
+				{
+					"name" : "vga_R",
+					"strict" : false
+				},
+				{
+					"name" : "vga_G",
+					"strict" : false
+				},
+				{
+					"name" : "vga_B",
+					"strict" : false
+				},
+				{
+					"name" : "clk_50M",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

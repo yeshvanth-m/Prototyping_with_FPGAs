@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sun Apr 11 13:08:07 2021
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : Rotary_Encoder
+Top-level Entity Name : Rotary_Encoder
+Family : Cyclone IV E
+Total logic elements : 16
+    Total combinational functions : 10
+    Dedicated logic registers : 14
+Total registers : 14
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

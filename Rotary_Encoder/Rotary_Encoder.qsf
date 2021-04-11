@@ -1,0 +1,73 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY "Rotary_Encoder"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:41:05 APRIL 11,2021"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to clk
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to clk
+
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A15 -to count[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[0]
+set_location_assignment PIN_A13 -to count[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[1]
+set_location_assignment PIN_B13 -to count[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[2]
+set_location_assignment PIN_A11 -to count[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[3]
+set_location_assignment PIN_D1 -to count[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[4]
+set_location_assignment PIN_F3 -to count[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[5]
+set_location_assignment PIN_B1 -to count[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[6]
+set_location_assignment PIN_L3 -to count[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to count[7]
+
+#============================================================
+# GPIO_0, GPIO_0 connect to GPIO Default
+#============================================================
+
+set_location_assignment PIN_B4 -to direction_led
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to direction_led
+set_location_assignment PIN_B5 -to switch_out
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to switch_out
+
+set_location_assignment PIN_C9 -to rot_en_A
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rot_en_A
+set_location_assignment PIN_D9 -to rot_en_B
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to rot_en_B
+set_location_assignment PIN_E11 -to switch_in
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to switch_in
+
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name SOURCE_FILE Rotary_Encoder_assignment_defaults.qdf
+set_global_assignment -name SOURCE_FILE Rotary_Encoder.qsf
+set_global_assignment -name SDC_FILE Rotary_Encoder.SDC
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

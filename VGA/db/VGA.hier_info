@@ -1,0 +1,56 @@
+|VGA
+clk_50M => clk.CLK
+vga_h_sync <= hvsync_generator:syncgen.vga_h_sync
+vga_v_sync <= hvsync_generator:syncgen.vga_v_sync
+vga_R <= vga_R~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_G <= vga_G~reg0.DB_MAX_OUTPUT_PORT_TYPE
+vga_B <= vga_B~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|VGA|hvsync_generator:syncgen
+clk => inDisplayArea~reg0.CLK
+clk => vga_VS.CLK
+clk => vga_HS.CLK
+clk => CounterY[0]~reg0.CLK
+clk => CounterY[1]~reg0.CLK
+clk => CounterY[2]~reg0.CLK
+clk => CounterY[3]~reg0.CLK
+clk => CounterY[4]~reg0.CLK
+clk => CounterY[5]~reg0.CLK
+clk => CounterY[6]~reg0.CLK
+clk => CounterY[7]~reg0.CLK
+clk => CounterY[8]~reg0.CLK
+clk => CounterX[0]~reg0.CLK
+clk => CounterX[1]~reg0.CLK
+clk => CounterX[2]~reg0.CLK
+clk => CounterX[3]~reg0.CLK
+clk => CounterX[4]~reg0.CLK
+clk => CounterX[5]~reg0.CLK
+clk => CounterX[6]~reg0.CLK
+clk => CounterX[7]~reg0.CLK
+clk => CounterX[8]~reg0.CLK
+clk => CounterX[9]~reg0.CLK
+vga_h_sync <= vga_HS.DB_MAX_OUTPUT_PORT_TYPE
+vga_v_sync <= vga_VS.DB_MAX_OUTPUT_PORT_TYPE
+inDisplayArea <= inDisplayArea~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[0] <= CounterX[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[1] <= CounterX[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[2] <= CounterX[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[3] <= CounterX[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[4] <= CounterX[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[5] <= CounterX[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[6] <= CounterX[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[7] <= CounterX[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[8] <= CounterX[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterX[9] <= CounterX[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[0] <= CounterY[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[1] <= CounterY[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[2] <= CounterY[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[3] <= CounterY[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[4] <= CounterY[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[5] <= CounterY[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[6] <= CounterY[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[7] <= CounterY[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+CounterY[8] <= CounterY[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

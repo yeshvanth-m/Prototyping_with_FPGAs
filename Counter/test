@@ -1,0 +1,13 @@
+module (input clk,reset, output reg [7:0] Count);
+always @ (posedge clk)
+	begin
+		if (reset)
+		begin
+			Count <= 0;
+		end
+		else
+		begin
+			Count <= Count + 1;
+		end
+	end
+endmodule

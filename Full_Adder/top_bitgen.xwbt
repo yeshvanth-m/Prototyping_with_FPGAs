@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FPGA Projects\Full_Adder\top.ncd
+OUTFILE=E:\FPGA Projects\Full_Adder\top.bit
+FAMILY=Spartan6
+PART=xc6slx9-2tqg144
+WORKINGDIR=E:\FPGA Projects\Full_Adder
+LICENSE=WebPack
+USER_INFO=212067839_0_0_214

@@ -1,0 +1,53 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "Count[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Count[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reset_c",
+					"strict" : false
+				},
+				{
+					"name" : "reset_fd",
+					"strict" : false
+				},
+				{
+					"name" : "Clk_50MHz",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

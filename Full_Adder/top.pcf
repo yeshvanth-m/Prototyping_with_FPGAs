@@ -1,0 +1,12 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Apr 04 17:44:26 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "input_1" LOCATE = SITE "P80" LEVEL 1;
+COMP "input_2" LOCATE = SITE "P81" LEVEL 1;
+COMP "carry_in" LOCATE = SITE "P82" LEVEL 1;
+COMP "carry_out" LOCATE = SITE "P15" LEVEL 1;
+COMP "sum" LOCATE = SITE "P16" LEVEL 1;
+SCHEMATIC END;
+

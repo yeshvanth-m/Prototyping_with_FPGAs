@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\FPGA Projects\Full_Adder\impact.xsl
+OUTFILE=E:\FPGA Projects\Full_Adder\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\FPGA Projects\Full_Adder
+LICENSE=iMPACT
+USER_INFO=iMPACT

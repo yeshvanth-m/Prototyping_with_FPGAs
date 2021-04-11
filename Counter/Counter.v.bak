@@ -1,0 +1,19 @@
+module Counter (
+	input Clk_50MHz,Clr,reset,
+	output reg [7:0] Count
+);
+
+	wire Clk_1Hz;
+	Freq_Divider FD1 (.clr(Clr), .clk(Clk_50MHz), .clk_1Hz(Clk_1Hz));
+
+	always @ (posedge Clk_1Hz)
+	begin
+		if (reset)
+			Count = 0;
+		else
+			Count = Count + 1;
+	end
+endmodule
+
+	
+	

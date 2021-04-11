@@ -1,0 +1,67 @@
+#============================================================
+# Build by Terasic System Builder
+#============================================================
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY "Counter"
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 12.0
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "17:02:54 APRIL 09,2021"
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
+
+#============================================================
+# CLOCK
+#============================================================
+set_location_assignment PIN_R8 -to Clk_50MHz
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Clk_50MHz
+
+#============================================================
+# LED
+#============================================================
+set_location_assignment PIN_A15 -to Count[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[0]
+set_location_assignment PIN_A13 -to Count[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[1]
+set_location_assignment PIN_B13 -to Count[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[2]
+set_location_assignment PIN_A11 -to Count[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[3]
+set_location_assignment PIN_D1 -to Count[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[4]
+set_location_assignment PIN_F3 -to Count[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[5]
+set_location_assignment PIN_B1 -to Count[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[6]
+set_location_assignment PIN_L3 -to Count[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to Count[7]
+
+#============================================================
+# Reset switch
+#============================================================
+
+set_location_assignment PIN_M1 -to reset_c
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset_c
+
+set_location_assignment PIN_T8 -to reset_fd
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to reset_fd
+
+#============================================================
+# End of pin assignments by Terasic System Builder
+#============================================================
+
+
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE Freq_Divider.v
+set_global_assignment -name SOURCE_FILE Counter_assignment_defaults.qdf
+set_global_assignment -name SOURCE_FILE Counter.qsf
+set_global_assignment -name SDC_FILE Counter.SDC
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
